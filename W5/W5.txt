@@ -1,0 +1,18 @@
+Libraries
+============
+
+sudo apt update
+sudo apt-get install python3-smbus
+
+
+Connection
+==============
+
+Potentiometer: 5V, A0, Ground
+
+PIN 2 = GPIO2
+PIN 5 = GPIO3
+
+SDA = Ras PI(PIN 2) --> UNO(A4)
+SCL = Ras PI(PIN 5) --> UNO(A5)
+

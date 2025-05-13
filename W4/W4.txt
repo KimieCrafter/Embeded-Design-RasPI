@@ -1,0 +1,11 @@
+Libraries
+============
+
+sudo apt update
+sudo apt install python3-gpiozero
+
+Connection
+==============
+
+PIN 11 = GPIO17
+PIN 6  = GND
