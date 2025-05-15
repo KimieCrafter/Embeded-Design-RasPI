@@ -1,0 +1,13 @@
+Libraries
+============
+
+sudo apt update
+sudo apt install python3-gpiozero
+
+Connection
+==============
+
+PIN 17 = Servo 1
+PIN 18 = Servo 2
+
+" Servo going opposite way and show the val in the terminal "
