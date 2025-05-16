@@ -1,0 +1,39 @@
+Software Ways to Limit Power on a Raspberry Pi 
+==================================================
+
+- Disable HDMI Output (If not needed)
+
+Turn Off :  /opt/vc/bin/tvservice -o
+
+Turn On : /opt/vc/bin/tvservice -p && fbset -depth 8 && fbset -depth 16
+
+- Limit CPU Frequency (Underclocking)
+
+Go to config file: sudo nano /boot/config.txt
+
+Add This: 
+
+arm_freq=600
+core_freq=250
+sdram_freq=400
+over_voltage=-4
+
+- Disable Unused Services/Interfaces
+
+Go to config file: sudo nano /boot/config.txt
+
+Add this: 
+
+# Disable Wi-Fi
+dtoverlay=disable-wifi
+
+# Disable Bluetooth
+dtoverlay=disable-bt
+
+to Disable
+
+sudo systemctl disable bluetooth
+sudo systemctl disable avahi-daemon
+sudo systemctl disable triggerhappy
+
+-
